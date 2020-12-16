@@ -9,13 +9,17 @@
 <script>
 	$(document).ready(function(){
 	    $("button").click(function(){
-	        $(".test, #demo").hide();
+			//$(".test, #demo").hide();
+			//$(".test #demo").hide();
+			$(".test#demo").hide();
 	    });
 	});
 </script>
 	<h2 class="test">This is a heading</h2>
 	<p id="demo">This is a paragraph.</p>
 	<p>This is another paragraph.</p>
+
+	<h2 class="test" id="demo">This is a heading test yeah!</h2>
 	<button>Click me</button>
 </body>
 </html>
