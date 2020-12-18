@@ -8,9 +8,19 @@
 	$(document).ready(function(){
 	    $("p").on("click", function(){
 	        $(this).css("background-color", "pink");
+		});
+		$("p").on("mouseenter", function(){
+	        $(this).css("background-color", "red");
+		});
+		$("p").on("mouseout", function(){
+	        $(this).css("background-color", "blue");
 	    });
 	    $("button").click(function(){
 	        $("p").off("click");
+		});
+		$("button").click(function(){
+			$("p").off("mouseenter");
+			$("p").off("mouseout");
 	    });
 	});
 </script>
